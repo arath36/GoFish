@@ -44,6 +44,8 @@ class Card
     string suitString(Suit s)      const;  // return "s", "h",...
     
     string rankString(int r)       const;  // return "A", "2", ..."Q"  
+
+    void swap(Card &c);
     
     
     bool operator == (const Card& rhs) const;
