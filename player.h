@@ -10,9 +10,8 @@
 #include <iostream>
 #include <string>
 #include <vector>
-
-
 #include "card.h"
+#include "deck.h"
 using namespace std;
 
 
@@ -23,6 +22,8 @@ class Player
 
     Player(string name) {
        myName = name;
+       unsigned int currentTime = (unsigned)time(0);
+       srand(currentTime);
     }
 
     string getName() const {
